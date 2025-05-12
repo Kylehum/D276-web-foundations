@@ -7,17 +7,20 @@
     <link rel="stylesheet"   href="styling.css">
 </head>
 <body class="details">
-    <header class="menu">
-        <nav>
-            <a href="index.html" class="top"  id="index1">Home</a>
-            <a href="cover.html" class="top" id="cover1">Cover Letter</a>
-            <a href="goals.html" class="top" id="goals1">Career Goals</a>
-        </nav>
-    </header>
+    <article>
+        <header class="menu">
+            <nav>
+                <a href="index.html" class="top"  id="index1">Home |</a>
+                <a href="cover.html" class="top" id="cover1">Cover Letter |</a>
+                <a href="goals.html" class="top" id="goals1">Career Goals</a>
+            </nav>
+            <div id="date"></div>
+        </header>
+    </article>
     <main class="main">
         <section class="identity">
-            <img src="project_pic.jpg" alt="pic of Kyle Hummer Lira" class="kyle" width="200px" height="auto">
-            <div>
+            <img src="project_pic.jpg" alt="pic of Kyle Hummer Lira" class="kyle" style="border-radius: 50%;" width="200px" height="auto">
+            <div class="name">
                 <h1>KYLE HUMMER LIRA</h1>
                 <p><em>Technology Research Tech</em></p>
                 <ul>
@@ -31,15 +34,15 @@
         </section>
         <div class="bottom">
             <div class="left-column">
-                <section class="education">
-                    <h3>Education</h3>
-                        <h4>Western Govenors University</h4>
-                            <div>
+                <section>
+                    <h3 class="school" id="education">Education</h3>
+                        <h4 class="school" id="wgu">Western Govenors University</h4>
+                            <div class="infowgu">
                                 <p>Bachelors of Science Software Engineering</p>
                                 <p>2025 - Current</p>
                             </div>
-                        <h4>Oregon State University</h4>
-                            <div>
+                        <h4 class="school" id="osu">Oregon State University</h4>
+                            <div class="infoosu">
                                 <p>Bachelors of Science Sociology</p>
                                 <p>2011 - 2016</p>
                             </div>
@@ -96,11 +99,18 @@
                                 <td></td>
                             </tf>
                             <tr>
+                                <td>Communication</td>
                                 <td></td>
                                 <td></td>
                                 <td>X</td>
-                                <td></td>
                             </tf>
+                            <tr>
+                                <td>Time Management</td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                            </tf>
+
                         
                     </table>
                 </section>
@@ -119,7 +129,7 @@
                     <p>Applied Materials</p>
                     <p>2022-2023</p>
                     <ul>
-                        <li>Installed multi million dollar 300mm plasma etch tools for customers of Applied Materials which included move in to the<br> final handoff of tool to customer for production.</li>
+                        <li>Installed multi million dollar 300mm plasma etch tools for customers of <span>Applied Materials</span> which included move in to the<br> final handoff of tool to customer for production.</li>
                         <li>Conducted pump hookups, robot teaching, ensured software was properly installed, made sure comms was properly <br>connected, etc to tools.</li>
                         <li>Conducted tests such as leak checks, dummy wafer runs, etc to ensure tool was fully ready for customer at handoff date.</li>
                     </ul>
@@ -144,6 +154,10 @@
 
     </main>
     <footer><em>Made by Kyle Hummer Lira</em></footer>
-
+    <script>
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString();
+        document.getElementById('date').textContent = formattedDate;
+    </script>
 </body>
 </html>

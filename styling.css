@@ -9,7 +9,7 @@
     flex-direction: column;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color:white;
 }
 .buttons {
     flex: 1;
@@ -52,13 +52,14 @@
 
 html, body {
     height: 100%;
-    background-color: #efe6d5;
+    background-color: #3d405b; 
 
 }
 .main{
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
+    
 
 }
 .details {
@@ -66,31 +67,40 @@ html, body {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-
     padding: 20px;
+    height: 150%;
+    
     
 }
 .menu {
     display: flex;
     flex-direction: row;
-    background-color: rgb(66, 168, 78);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    justify-content: space-between;
+    
+    color: #f4f1de;
+    
 }
 
 .top {
     text-decoration: none;
-    color: black;
+    color: #f4f1de;
 }
 .identity {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 30px;
     padding: 20px;
-    background-color: aqua;
-    border: aqua solid 6px;
+    background-color: #e07a5f;
     flex-wrap: wrap; 
+    color: #f4f1de;
+    padding-left: 40px;
+    padding-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
 }
 .bottom {
     display: flex;
@@ -102,16 +112,18 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 80vh;
-    background-color: beige;
+    height: 100vh;
+    background-color: #e07a5f;
     padding-left: 20px;
-
+    border-bottom-left-radius: 10px;
     
 }
 .work {
-    background-color: bisque;
-    height: 80vh;
+    background-color: #e07a5f;
+    height: 100vh;
     padding: 20px;
+    color: #f4f1de;
+    border-bottom-right-radius: 10px;
     
 }
 .work ul {
@@ -121,9 +133,27 @@ html, body {
 }
 table {
     border-collapse: collapse;
+    color: #f4f1de;
 }
 th, td{
-    border: 2px black solid;
+    border: 2px #f4f1de solid;
     padding: 5px;
     text-align: left;
 }
+.school {
+    padding-bottom: 15px;
+    color: #f4f1de;
+}
+.infowgu {
+    padding-bottom: 15px;
+}
+#date {
+    padding-right: 10px;
+}
+.infowgu {
+    color: #f4f1de;
+}
+.infoosu {
+    color: #f4f1de;
+}
+
