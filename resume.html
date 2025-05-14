@@ -23,7 +23,7 @@
             <div class="name">
                 <h1>KYLE HUMMER LIRA</h1>
                 <p><em>Technology Research Tech</em></p>
-                <ul>
+                <ul class="pinfo">
                     <li>1216 SE 47th St.<br>Hillsboro OR 97123<br></li>
                     <li>khumme11@wgu.edu<br></li>
                     <li>541-401-1751<br></li>
@@ -121,7 +121,7 @@
                     <p>Intel Incorporation</p>
                     <p>2024 - Current</p>
                     <ul class="intel">
-                        <li>Work with engineers to conduct new experiments in hybrid bonding and IR debonding techniques.</li>
+                        <li>Work with engineers to conduct new experiments in hybrid bonding and <strong>IR</strong> debonding techniques.</li>
                         <li>Conduct manual bonding between wafers with new processes/elements to ensure bond can be processed on fab tools.</li>
                         <li>Owner of lab tensile/compression tool that tests the wafer bond force and also tests overall strength of wafers.</li>
                     </ul>
@@ -158,6 +158,8 @@
         const today = new Date();
         const formattedDate = today.toLocaleDateString();
         document.getElementById('date').textContent = formattedDate;
+
+        console.log("Welcome to Kyle Hummer Lira's page!")
     </script>
 </body>
 </html>
